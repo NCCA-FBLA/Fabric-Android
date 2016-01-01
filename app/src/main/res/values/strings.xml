@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Fabric</string>
+
+    <string name="drawer_open">Open Profile Pane</string>
+    <string name="drawer_close">Close Profile Pane</string>
+
+</resources>

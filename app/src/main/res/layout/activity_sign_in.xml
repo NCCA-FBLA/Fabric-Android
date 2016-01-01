@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.github.ncca_fbla.fabric.SignInActivity"
+    android:backgroundTintMode="src_over">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="Sign In With Facebook"
+        android:id="@+id/button2"
+        android:layout_marginBottom="170dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/defualt_margin"
+        android:layout_marginRight="@dimen/defualt_margin" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="Sign In With Twitter"
+        android:id="@+id/button"
+        android:layout_alignTop="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="@dimen/defualt_margin"
+        android:layout_marginRight="@dimen/defualt_margin" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:tint="#99e91e63"
+        android:tintMode="src_over"
+        android:scaleType="centerCrop"
+        android:src="@drawable/manhattan" />
+
+    <ImageView
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="144dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentEnd="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fabric"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView2" />
+
+</RelativeLayout>
