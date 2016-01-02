@@ -1,6 +1,7 @@
 package io.github.ncca_fbla.fabric;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -9,9 +10,8 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.text.Spannable;
 import android.text.SpannableString;
-import android.text.style.TypefaceSpan;
+import android.view.MenuItem;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -35,14 +35,13 @@ public class MainActivity extends AppCompatActivity {
 
         // Get the app name from a string resource and store it in a SpannableString.
         SpannableString appName = new SpannableString(getString(R.string.app_name));
-        // TODO: Spannable string is not working.
-        // appName.setSpan(new TypefaceSpan(self, "ThirsyScript.otf"), 0, appName.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        // TODO: Format the string with our font.
 
         // Get the navigation drawer.
         navigationDrawer = (DrawerLayout) findViewById(R.id.navigation_drawer);
 
         // Set up the navigation drawer toggle.
-        drawerToggle = new ActionBarDrawerToggle(context, navigationDrawer, R.string.drawer_open, R.string.drawer_close) {
+        drawerToggle = new ActionBarDrawerToggle(context, navigationDrawer, R.string.action_drawer_open, R.string.action_drawer_close) {
             public void onDrawerClose(View view) {
                 // TODO: What needs to happen?
             }
@@ -82,5 +81,22 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(null, "Search");
 
         pager.setAdapter(adapter);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()) {
+            case R.id.action_refresh:
+                // TODO: Handle feed refresh.
+                return true;
+
+            case R.id.action_settings:
+                Intent settingsIntent = new Intent(context, SettingsActivity.class);
+                startActivity(settingsIntent);
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

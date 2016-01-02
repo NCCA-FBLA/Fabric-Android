@@ -6,28 +6,6 @@
     tools:context="io.github.ncca_fbla.fabric.SignInActivity"
     android:backgroundTintMode="src_over">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:text="Sign In With Facebook"
-        android:id="@+id/button2"
-        android:layout_marginBottom="170dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="@dimen/defualt_margin"
-        android:layout_marginRight="@dimen/defualt_margin" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:text="Sign In With Twitter"
-        android:id="@+id/button"
-        android:layout_alignTop="@+id/button2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="75dp"
-        android:layout_marginLeft="@dimen/defualt_margin"
-        android:layout_marginRight="@dimen/defualt_margin" />
-
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -46,16 +24,44 @@
         android:id="@+id/imageView2"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="144dp"
-        android:background="@color/colorPrimary"
-        android:layout_alignParentEnd="false" />
+        android:layout_marginTop="100dp"
+        android:background="@color/colorPrimary" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fabric"
+        android:text="@string/app_name"
         android:id="@+id/textView"
+        android:layout_below="@+id/imageView2"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/imageView2" />
+        android:layout_marginTop="16dp"
+        android:textSize="28sp"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="Sign In With Facebook"
+        android:id="@+id/button"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/defualt_margin"
+        android:layout_marginRight="@dimen/defualt_margin"
+        android:layout_marginTop="48dp"
+        android:background="#3b5998"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Sign In With Twitter"
+        android:id="@+id/button2"
+        android:layout_below="@+id/button"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/defualt_margin"
+        android:layout_marginRight="@dimen/defualt_margin"
+        android:layout_marginTop="24dp"
+        android:background="#4099ff"
+        android:textColor="#ffffff" />
 
 </RelativeLayout>

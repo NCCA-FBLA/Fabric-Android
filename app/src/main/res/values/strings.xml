@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Fabric</string>
 
-    <string name="drawer_open">Open Profile Pane</string>
-    <string name="drawer_close">Close Profile Pane</string>
+    <string name="action_drawer_open">Open Profile Pane</string>
+    <string name="action_drawer_close">Close Profile Pane</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_refresh">Refresh</string>
 
 </resources>
