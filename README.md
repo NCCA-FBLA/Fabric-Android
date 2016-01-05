@@ -1,4 +1,7 @@
 # Fabric-Android
+
+![Fabric Logo](https://raw.githubusercontent.com/NCCA-FBLA/Fabric-Android/master/app/src/main/ic_launcher-web.png)
+
 An open source cross-platform social media application for fashion.
 
 **Note To Cheaters And Spies Attempting To Clone My Code.**
