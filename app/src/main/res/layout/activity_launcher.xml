@@ -6,4 +6,9 @@
     tools:context="io.github.ncca_fbla.fabric.LauncherActivity"
     android:background="@color/colorPrimary">
 
+    <ImageView
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center" />
 </FrameLayout>

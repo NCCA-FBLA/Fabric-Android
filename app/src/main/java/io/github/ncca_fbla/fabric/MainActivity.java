@@ -1,14 +1,13 @@
 package io.github.ncca_fbla.fabric;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.content.res.Configuration;
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.text.SpannableString;
 import android.view.MenuItem;
@@ -53,6 +52,9 @@ public class MainActivity extends AppCompatActivity {
 
         navigationDrawer.setDrawerListener(drawerToggle);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_close);
+
         // Set up ViewPager stuff and tabs.
         ViewPager pager = (ViewPager) findViewById(R.id.viewpager);
         prepareViewPager(pager);
@@ -91,12 +93,15 @@ public class MainActivity extends AppCompatActivity {
                 return true;
 
             case R.id.action_settings:
-                Intent settingsIntent = new Intent(context, SettingsActivity.class);
-                startActivity(settingsIntent);
                 return true;
 
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        // TODO: Safely log out.
     }
 }
