@@ -5,6 +5,4 @@
     android:layout_height="match_parent"
     tools:context="io.github.ncca_fbla.fabric.HomeFragment">
 
-
-
 </LinearLayout>
