@@ -17,4 +17,9 @@
         <item name="android:colorAccent">@color/accent_material_light</item>
     </style>
 
+    <style name="Toolbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">#FFFFFF</item>
+    </style>
+
 </resources>

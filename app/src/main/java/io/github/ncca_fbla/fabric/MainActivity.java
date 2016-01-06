@@ -10,6 +10,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.SpannableString;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -77,12 +78,17 @@ public class MainActivity extends AppCompatActivity {
 
     private void prepareViewPager(ViewPager pager) {
         TabViewPagerAdapter adapter = new TabViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(null, "Home");
-        adapter.addFragment(null, "Favorites");
-        adapter.addFragment(null, "Social");
-        adapter.addFragment(null, "Search");
+        adapter.addFragment(new HomeFragment(), "Home");
+        adapter.addFragment(new StarredFragment(), "Favorites");
+        adapter.addFragment(new SocialFragment(), "Social");
 
         pager.setAdapter(adapter);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
     }
 
     @Override
