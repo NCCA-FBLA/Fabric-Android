@@ -22,4 +22,8 @@
         <item name="android:textColorSecondary">#FFFFFF</item>
     </style>
 
+    <style name="AppTheme.TransparentActionBar">
+        <!-- TODO: Set ActionBar transparent -->
+    </style>
+
 </resources>
