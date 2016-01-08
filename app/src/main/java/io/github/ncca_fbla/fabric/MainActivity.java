@@ -43,11 +43,11 @@ public class MainActivity extends AppCompatActivity {
         // Set up the navigation drawer toggle.
         drawerToggle = new ActionBarDrawerToggle(context, navigationDrawer, R.string.action_drawer_open, R.string.action_drawer_close) {
             public void onDrawerClose(View view) {
-                // TODO: What needs to happen?
+                invalidateOptionsMenu();
             }
 
             public void onDrawerOpen(View view) {
-                // TODO: What needs to happen?
+                invalidateOptionsMenu();
             }
         };
 
@@ -93,6 +93,13 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
+        // Run this if the nav drawer is activated.
+        if(drawerToggle.onOptionsItemSelected(item)) {
+            return true;
+        }
+
+        // Otherwise match the item that was pressed.
         switch(item.getItemId()) {
             case R.id.action_refresh:
                 // TODO: Handle feed refresh.
