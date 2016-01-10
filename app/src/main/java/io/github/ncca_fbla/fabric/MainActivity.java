@@ -14,6 +14,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
     private DrawerLayout navigationDrawer;
     private ActionBarDrawerToggle drawerToggle;
@@ -52,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
         };
 
         navigationDrawer.setDrawerListener(drawerToggle);
+
+        // TODO: Set up the navigation drawer list.
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_close);

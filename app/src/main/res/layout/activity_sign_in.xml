@@ -16,7 +16,8 @@
         android:tint="#99e91e63"
         android:tintMode="src_over"
         android:scaleType="centerCrop"
-        android:src="@drawable/manhattan" />
+        android:src="@drawable/manhattan"
+        android:contentDescription="@string/content_background" />
 
     <ImageView
         android:layout_width="144dp"
@@ -25,8 +26,9 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:background="@color/colorPrimary"
-        android:layout_alignParentEnd="false" />
+        android:layout_alignParentEnd="false"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="@string/content_logo" />
 
     <TextView
         android:layout_width="wrap_content"

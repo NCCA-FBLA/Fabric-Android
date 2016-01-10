@@ -17,11 +17,20 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:orientation="vertical"
-        android:background="#f382ff">
+        android:background="@android:color/background_light">
 
-        <ImageView
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="256dp" />
+            android:layout_height="220dp"></FrameLayout>
+
+        <ListView
+            android:id="@+id/navigation_drawer_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"/>
 
 
     </LinearLayout>

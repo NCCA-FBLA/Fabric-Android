@@ -7,8 +7,9 @@
     android:background="@color/colorPrimary">
 
     <ImageView
-        android:layout_width="256dp"
-        android:layout_height="256dp"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
         android:id="@+id/imageView"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher" />
 </FrameLayout>
