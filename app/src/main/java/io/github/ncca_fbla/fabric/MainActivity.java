@@ -14,8 +14,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import java.util.ArrayList;
-
 public class MainActivity extends AppCompatActivity {
     private DrawerLayout navigationDrawer;
     private ActionBarDrawerToggle drawerToggle;
@@ -38,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         // Get the app name from a string resource and store it in a SpannableString.
         SpannableString appName = new SpannableString(getString(R.string.app_name));
         // TODO: Format the string with our font.
+        getSupportActionBar().setTitle(appName);
 
         // Get the navigation drawer.
         navigationDrawer = (DrawerLayout) findViewById(R.id.navigation_drawer);
