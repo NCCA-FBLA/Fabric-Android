@@ -26,4 +26,8 @@
         <!-- TODO: Set ActionBar transparent -->
     </style>
 
+    <style name="AppTheme.SignIn" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@drawable/manhattan</item>
+    </style>
+
 </resources>
