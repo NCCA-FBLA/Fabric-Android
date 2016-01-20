@@ -43,10 +43,12 @@ public class MainActivity extends AppCompatActivity {
 
         // Set up the navigation drawer toggle.
         drawerToggle = new ActionBarDrawerToggle(context, navigationDrawer, R.string.action_drawer_open, R.string.action_drawer_close) {
+            @SuppressWarnings("unused")
             public void onDrawerClose(View view) {
                 invalidateOptionsMenu();
             }
 
+            @SuppressWarnings("unused")
             public void onDrawerOpen(View view) {
                 invalidateOptionsMenu();
             }
