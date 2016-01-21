@@ -3,67 +3,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="io.github.ncca_fbla.fabric.SignInActivity"
-    android:backgroundTintMode="src_over">
+    android:backgroundTintMode="src_over"
+    tools:context="io.github.ncca_fbla.fabric.SignInActivity">
 
     <ImageView
+        android:id="@+id/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/background"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:contentDescription="@string/content_background"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:background="#99e91e63"
+        android:contentDescription="@string/content_background"
         android:cropToPadding="false"
         android:scaleType="centerCrop" />
 
     <ImageView
+        android:id="@+id/logo"
         android:layout_width="144dp"
         android:layout_height="144dp"
-        android:id="@+id/logo"
+        android:layout_alignParentEnd="false"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:layout_alignParentEnd="false"
-        android:src="@mipmap/ic_launcher"
-        android:contentDescription="@string/content_logo" />
+        android:contentDescription="@string/content_logo"
+        android:src="@mipmap/ic_launcher" />
 
     <TextView
+        android:id="@+id/app_name_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:id="@+id/app_name_text"
         android:layout_below="@+id/logo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp"
-        android:textSize="28sp"
-        android:textColor="#ffffff" />
+        android:text="@string/app_name"
+        android:textColor="#ffffff"
+        android:textSize="28sp" />
 
     <Button
+        android:id="@+id/sign_in_button_facebook"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:text="@string/signin_facebook"
-        android:id="@+id/sign_in_button_facebook"
         android:layout_below="@+id/app_name_text"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="@dimen/defualt_margin"
-        android:layout_marginRight="@dimen/defualt_margin"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
         android:layout_marginTop="48dp"
         android:background="#3b5998"
+        android:text="@string/signin_facebook"
         android:textColor="#ffffff" />
 
     <Button
+        android:id="@+id/sign_in_button_twitter"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:text="@string/signin_twitter"
-        android:id="@+id/sign_in_button_twitter"
         android:layout_below="@+id/sign_in_button_facebook"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="@dimen/defualt_margin"
-        android:layout_marginRight="@dimen/defualt_margin"
-        android:background="#4099ff"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
         android:layout_marginTop="24dp"
+        android:background="#4099ff"
+        android:text="@string/signin_twitter"
         android:textColor="#ffffff" />
 
 </RelativeLayout>
