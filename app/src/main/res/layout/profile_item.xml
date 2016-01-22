@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) NCCA FBLA 2016
+  ~ Written by James Parsons
+  ~
+  -->
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal">
 
     <ImageView
-        android:id="@+id/avatar"
+        android:id="@+id/profileAvatar"
         android:layout_width="83dp"
         android:layout_height="83dp"
         android:src="@drawable/ic_person" />
@@ -16,6 +22,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/userDisplayName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -24,6 +31,7 @@
             android:textSize="22sp" />
 
         <TextView
+            android:id="@+id/userEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"

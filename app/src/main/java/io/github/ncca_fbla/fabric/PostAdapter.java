@@ -43,17 +43,35 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
     }
 
     // ViewHolder class for posts.
-    public static class PostViewHolder extends RecyclerView.ViewHolder {
+    public static class PostViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         protected TextView title;
         protected ImageButton shareButton;
         protected ImageButton starButton;
         protected ImageView authorImage;
-        protected TextView authorName;
 
         public PostViewHolder(View v) {
             super(v);
 
-            // TODO: ID post view items and add them in here.
+            title = (TextView) v.findViewById(R.id.caption);
+            shareButton = (ImageButton) v.findViewById(R.id.btn_star);
+            starButton = (ImageButton) v.findViewById(R.id.btn_share);
+            authorImage = (ImageView) v.findViewById(R.id.avatar);
+        }
+
+        @Override
+        public void onClick(View v) {
+            // Find out who was clicked.
+            switch (v.getId()) {
+                case R.id.btn_star:
+                    // TODO: Toggle start status both on the client and server.
+                    break;
+                case R.id.btn_share:
+                    // TODO: How are we gonna do sharing :P.
+                    break;
+                case R.id.avatar:
+                    // TODO: Oh god :P how are we going to launch an activty from here?
+                    break;
+            }
         }
     }
 }
