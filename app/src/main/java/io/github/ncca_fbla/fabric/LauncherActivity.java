@@ -1,10 +1,15 @@
+/*
+ * Copyright (c) NCCA FBLA 2016
+ * Written by James Parsons
+ *
+ */
+
 package io.github.ncca_fbla.fabric;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 
 public class LauncherActivity extends Activity {
     public Activity context;

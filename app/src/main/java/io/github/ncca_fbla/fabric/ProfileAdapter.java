@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) NCCA FBLA 2016
+ * Written by James Parsons
+ *
+ */
+
 package io.github.ncca_fbla.fabric;
 
 // RecyclerView classes for building the following and follower screens.

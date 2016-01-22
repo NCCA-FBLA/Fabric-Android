@@ -1,9 +1,14 @@
+/*
+ * Copyright (c) NCCA FBLA 2016
+ * Written by James Parsons
+ *
+ */
+
 package io.github.ncca_fbla.fabric;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
-import android.widget.SearchView;
 
 public class FollowersActivity extends AppCompatActivity {
 
