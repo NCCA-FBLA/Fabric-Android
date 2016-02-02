@@ -1,3 +1,5 @@
+> :warning: **This repository has been deprected in favor of the Hybrid (Ionic) application.**
+
 # Fabric-Android
 
 ![Fabric Logo](https://raw.githubusercontent.com/NCCA-FBLA/Fabric-Android/master/app/src/main/ic_launcher-web.png)
